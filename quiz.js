@@ -1,6 +1,13 @@
 var button = document.getElementById("Trees");
 
 button.addEventListener("click", checkThis);
+addEventListener("keypress", checkReturn);
+
+function checkReturn (e){
+  if (e.keyCode == 13){
+   checkThis()
+  }
+}
 
 function submittedValue() {
   var treeForming = {
